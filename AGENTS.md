@@ -27,12 +27,15 @@ Tämä repo sisältää vain sivun.
 
 ## Julkistuspäivän lista
 
-1. Poista `noindex`-rivi tiedostosta `docs/index.html`.
-2. Korvaa `LINKKI`-kohdat kisalinkeillä.
-3. Tarkista, että info@talvicup.fi:n sähköpostiohjaus toimii (testiviesti).
-4. Jos järjestäjä on vahvistanut pisteasteikon, poista sen esitysmerkintä.
-5. Täytä LAHTORYHMAT, kun järjestäjä on vahvistanut kartan (kommentit `LAHTORYHMAT` tiedostossa `docs/index.html`).
-6. Jos kisapäivät tai reitit muuttuvat, aja `py tyokalut/tee_kalenteri.py` ja commitoi `docs/talvicup2027.ics`.
+Tässä järjestyksessä: sivu ei saa näkyä hakukoneille ennen kuin osoite ja kisalinkit toimivat.
+
+1. Tarkista, että info@talvicup.fi:n sähköpostiohjaus toimii (testiviesti). Sivu ohjaa kysymykset, korjauspyynnöt ja luvat sinne.
+2. Täytä LAHTORYHMAT, kun järjestäjä on vahvistanut kartan (kommentit `LAHTORYHMAT` tiedostossa `docs/index.html`, kaksi kohtaa).
+   Lisää samat kirjaimet usein kysyttyjen kohtaan "Mikä lähtö on minun?".
+3. Jos järjestäjä on vahvistanut pisteasteikon, poista sen esitysmerkintä.
+4. Korvaa `LINKKI 1`–`LINKKI 6` kisalinkeillä ja poista teksti "Kisalinkki tulee tähän".
+5. Poista `noindex`-rivi ja sen kommentti tiedostosta `docs/index.html`. Tulossivun `noindex` tulee generaattorista, eikä sitä muuteta käsin.
+6. Jos kisapäivät tai reitit ovat muuttuneet, aja `py tyokalut/tee_kalenteri.py` ja commitoi `docs/talvicup2027.ics`.
 
 ## Testit
 
