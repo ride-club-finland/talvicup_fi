@@ -10,7 +10,7 @@ Tämä repo sisältää vain sivun.
 | `docs/index.html` | Koko sivu. Pages julkaisee vain `docs/`-kansion. |
 | `docs/assets/` | Kuvat ja fontit (Saira Condensed, SIL OFL) |
 | `docs/CNAME` | Pagesin oma domain |
-| `tyokalut/tee_kuvat.py` | Renderöi kuvat ja fontit: `py -3.11 talvicup_fi/tyokalut/tee_kuvat.py` juuresta |
+| `tyokalut/tee_kuvat.py` | Renderöi kuvat (ja fontit `fontit`-argumentilla) Mediatehtaan TalviCup-kirjastosta: `uv run --project rcf_mediatehdas python talvicup_fi/tyokalut/tee_kuvat.py` juuresta |
 
 ## Säännöt
 
