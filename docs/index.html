@@ -93,6 +93,16 @@ h3.sub { font: 700 1.45rem/1.15 var(--display); text-transform: uppercase; color
 .two p { color: var(--soft); }
 .two p + p, .two p + .rules, .two .rules + p { margin-top: 10px; }
 
+.faq { max-width: 44em; margin-top: 28px; border-bottom: 1px solid var(--line); }
+.faq details { border-top: 1px solid var(--line); }
+.faq summary { display: flex; gap: 14px; align-items: baseline; padding: 14px 0; cursor: pointer; list-style: none; font: 700 1.3rem/1.2 var(--display); text-transform: uppercase; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::before { content: "+"; flex: none; width: 1ch; font-weight: 900; color: var(--amber); }
+.faq details[open] > summary::before { content: "–"; }
+.faq summary:hover { color: var(--ice); }
+.faq details p { padding: 0 0 16px calc(1ch + 14px); color: var(--soft); }
+.faq details p + p { margin-top: -4px; }
+
 footer { padding-block: 32px 40px; border-top: 1px solid var(--line); color: var(--soft); font-size: .98rem; }
 footer img { width: 160px; margin-bottom: 12px; }
 
@@ -250,6 +260,49 @@ footer img { width: 160px; margin-bottom: 12px; }
     <h2>Tulokset</h2>
     <p class="intro">Kisakohtaiset tulokset ovat ZwiftPowerissa heti kisan jälkeen. Alustava sarjatilanne ja tiimien tulostaulu julkaistaan täällä kisaa seuraavana päivänä, ensimmäisen kerran kisan 1 jälkeen.</p>
     <div class="cta"><a class="btn alt" href="tulokset/">Sarjatilanne</a></div>
+  </div>
+</section>
+
+<section id="ukk">
+  <div class="wrap">
+    <p class="kick">Ennen ensimmäistä kisaa</p>
+    <h2>Usein kysytyt</h2>
+    <div class="faq">
+      <details>
+        <summary>Minulla ei ole ZwiftPower-tiliä. Voinko silti ajaa?</summary>
+        <p>Kyllä. Jos näyt kisan tuloksissa ilman tiliä, pisteesi lasketaan, mutta luo tili ennen seuraavaa kisaa. Helpointa on luoda tili jo ennen ensimmäistä kisaa, koska tulokset luetaan ZwiftPowerista.</p>
+      </details>
+      <details>
+        <summary>Mikä lähtö on minun?</summary>
+        <p>Lähdöt ovat ikäkategorioita, eivät tehoryhmiä, joten valitse lähtö ikäsi mukaan, älä tavallisen Zwift-kategoriasi <i class="nw">(A–D)</i> mukaan. Avoimessa voi ajaa kuka tahansa, ja ikäkategorioista saa valita nuoremman. Jos valitsit ensimmäisessä kisassasi vahingossa väärän lähdön, kerro siitä osoitteeseen <a href="mailto:info@talvicup.fi">info@talvicup.fi</a>, niin kategoriasi voidaan korjata.</p>
+      </details>
+      <details>
+        <summary>En pääse kisaan 1. Kannattaako aloittaa myöhemmin?</summary>
+        <p>Kyllä. Mukaan saa tulla missä kisassa tahansa, ja viisi parasta kisaa lasketaan. Kun aloitat viimeistään kisassa 2, kaikki viisi parasta kisaasi lasketaan. Myöhemmin aloittaessa saat pisteet ajamistasi kisoista, ja väliin jääneet ovat nollia.</p>
+      </details>
+      <details>
+        <summary>Miten tiimi muodostetaan?</summary>
+        <p>Tiimi on ZwiftPower-tiimi. Kisan tiimipisteet ovat tiimin kolmen parhaan ajajan pisteet kaikista kategorioista, joten tiimiin riittää kolme ajajaa mistä tahansa ikäluokista. Seuran lisäksi myös kaveriporukka tai työpaikka voi perustaa oman tiimin. Tee tiimi hyvissä ajoin ja valitse se profiiliisi ennen ensimmäistä kisaasi, koska tiimi lukittuu ensimmäiseen kisaan, jossa edustat sitä.</p>
+      </details>
+      <details>
+        <summary>Olen alle 19-vuotias tai huoltaja. Näkyykö nimi tuloksissa?</summary>
+        <p>Jos ZwiftPower-ikäluokkasi on Jnr (alle 19 v.), nimesi näkyy tuloksissa muodossa ”(ei julkaista)”. Sijasi ja pisteesi lasketaan silti normaalisti.</p>
+        <p>Jos haluat nimesi näkyviin muodossa E.Sukunimi, pyydä huoltajaasi lähettämään viesti osoitteeseen <a href="mailto:info@talvicup.fi">info@talvicup.fi</a>. Viestiin riittävät ajajan nimi ZwiftPowerissa ja profiilin linkki, huoltajan nimi sekä lause ”Annan luvan julkaista nimen muodossa E.Sukunimi TalviCup 2027:n tuloksissa.” Luvan voi perua milloin tahansa samaan osoitteeseen.</p>
+        <p>U23-ajaja, jonka ikä on piilotettu ZwiftPowerissa: nimesi näytetään, kun laitat iän näkyviin profiiliin tai kerrot samaan osoitteeseen olevasi täysi-ikäinen.</p>
+      </details>
+      <details>
+        <summary>Miten pisteet lasketaan pistekisassa?</summary>
+        <p>Kisat 1, 3 ja 5 ovat pistekisoja: pisteet tulevat maalijärjestyksestä ja kireistä, ja kirin ratkaisee nopein aika segmentillä. Tarkat pisteet ovat kohdassa <a href="#saannot">Säännöt ja pisteet</a>.</p>
+      </details>
+      <details>
+        <summary>Mitä tarvitsen?</summary>
+        <p>Zwiftin, sykemittarin, älytrainerin tai tehomittarin (ZPoweria ei hyväksytä) sekä ZwiftPower-tilin. Erillistä ilmoittautumista ei ole.</p>
+      </details>
+      <details>
+        <summary>Miten jaan tulokseni?</summary>
+        <p>Jos käytät Stravaa, nimeä suoritus muodossa <i class="nw">TalviCup 2027 #N · reitti · talvicup.fi</i> ja lisää kuvaukseen <i class="nw">#talvicup</i>. Näin kaverisikin löytävät sarjaan.</p>
+      </details>
+    </div>
   </div>
 </section>
 
