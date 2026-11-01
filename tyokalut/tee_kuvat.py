@@ -37,8 +37,8 @@ def images():
     tk.tie((W, H), star_xy=(W / 2, H * .66), star_size=200, horizon=.8).save(SITE / "hero_pysty.webp", quality=78, method=6)
     tk.wordmark(1000).save(SITE / "sanamerkki.webp", quality=92, method=6)
 
-    full = tk.flake(640)
-    full.save(SITE / "hiutale.webp", quality=90, method=6)
+    # Footer flake, shown at 72 px: rendered at 2x.
+    tk.flake(144).save(SITE / "hiutale.webp", quality=90, method=6)
     for r in tk.races():
         tk.flake(240, active=(r["n"],)).save(SITE / f"hiutale_{r['n']}.webp", quality=88, method=6)
 

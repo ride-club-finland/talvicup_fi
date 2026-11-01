@@ -30,7 +30,7 @@ Tämä repo sisältää vain sivun.
 Tässä järjestyksessä: sivu ei saa näkyä hakukoneille ennen kuin osoite ja kisalinkit toimivat.
 
 1. Tarkista, että info@talvicup.fi:n sähköpostiohjaus toimii (testiviesti). Sivu ohjaa kysymykset, korjauspyynnöt ja luvat sinne.
-2. Täytä LAHTORYHMAT, kun järjestäjä on vahvistanut kartan (kommentit `LAHTORYHMAT` tiedostossa `docs/index.html`, kaksi kohtaa).
+2. Täytä LAHTORYHMAT, kun järjestäjä on vahvistanut kartan (kommentti `LAHTORYHMAT` tiedostossa `docs/index.html`).
    Lisää samat kirjaimet usein kysyttyjen kohtaan "Mikä lähtö on minun?".
 3. Jos järjestäjä on vahvistanut pisteasteikon, poista sen esitysmerkintä.
 4. Korvaa `LINKKI 1`–`LINKKI 6` kisalinkeillä ja poista teksti "Kisalinkki tulee tähän".
