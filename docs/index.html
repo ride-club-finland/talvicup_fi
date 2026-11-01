@@ -103,6 +103,7 @@ h3.sub { font: 700 1.45rem/1.15 var(--display); text-transform: uppercase; color
 
 footer { padding-block: 32px 40px; border-top: 1px solid var(--line); color: var(--soft); font-size: .98rem; }
 footer img { width: 160px; margin-bottom: 12px; }
+.foot-links { margin-top: 8px; font: 600 1rem/1.4 var(--display); letter-spacing: .08em; text-transform: uppercase; }
 
 @media (max-width: 800px) {
   body { font-size: 18px; }
@@ -243,11 +244,11 @@ footer img { width: 160px; margin-bottom: 12px; }
           <li><b>Kisa 5:</b> Yorkshire KOM ja Yorkshire Sprint, kumpikin 25–3 p.</li>
           <li><b>Sijat</b> lasketaan oman kategoriasi ja sukupuolesi suomalaisten ajajien kesken.</li>
           <li><b>Keskeytys ja poissaolo</b> ovat 0 p.</li>
-          <li><b>Tasapisteissä</b> ratkaisee paras tulos, sitten toiseksi paras, ja viimeisenä viimeisen kisan tulos.</li>
+          <li><b>Tasapisteissä</b> ratkaisee laskettujen kisojen paras tulos, sitten toiseksi paras ja niin edelleen, ja lopuksi viimeisen ajetun kisan tulos. Sama koskee tiimejä.</li>
         </ul>
         <p>Pisteasteikko on RCF:n esitys, ja se odottaa järjestäjän vahvistusta.</p>
         <h3 class="sub" style="margin-top:24px">Tiimikilpailu</h3>
-        <p>Tiimit kisaavat ZwiftPower-tiimien kautta. Tiimin kolmen parhaan ajajan pisteet kaikista kategorioista lasketaan yhteen, ja niistä tehdään oma tulostaulu. Tiimin viisi parasta kisaa lasketaan, ja tiimi lukittuu ensimmäiseen kisaan, jossa edustat sitä.</p>
+        <p>Tiimit kisaavat ZwiftPower-tiimien kautta. Tiimin kolmen parhaan ajajan pisteet kaikista kategorioista lasketaan yhteen, ja niistä tehdään oma tulostaulu. Tiimin viisi parasta kisaa lasketaan. Tiimisi lukittuu ensimmäiseen kisaan, jonka ajat maaliin sen edustajana.</p>
       </div>
     </div>
   </div>
@@ -273,7 +274,7 @@ footer img { width: 160px; margin-bottom: 12px; }
       </details>
       <details>
         <summary>Mikä lähtö on minun?</summary>
-        <p>Lähdöt ovat ikäkategorioita, eivät tehoryhmiä, joten valitse lähtö ikäsi mukaan, älä tavallisen Zwift-kategoriasi <i class="nw">(A–D)</i> mukaan. Avoimessa voi ajaa kuka tahansa, ja ikäkategorioista saa valita nuoremman. Jos valitsit ensimmäisessä kisassasi vahingossa väärän lähdön, kerro siitä osoitteeseen <a href="mailto:info@talvicup.fi">info@talvicup.fi</a>, niin kategoriasi voidaan korjata.</p>
+        <p>Lähdöt ovat ikäkategorioita, eivät tehoryhmiä, joten valitse lähtö ikäsi mukaan, älä tavallisen Zwift-kategoriasi <i class="nw">(A–D)</i> mukaan. Avoimessa voi ajaa kuka tahansa, ja ikäkategorioista saa valita nuoremman. Jos valitsit ensimmäisessä kisassasi vahingossa väärän lähdön, kerro siitä osoitteeseen <a href="mailto:info@talvicup.fi">info@talvicup.fi</a>, niin kategoriasi voidaan korjata. Korjaus koskee vain sitä kisaa, ja myöhemmin väärästä lähdöstä saa 0 pistettä.</p>
       </details>
       <details>
         <summary>En pääse kisaan 1. Kannattaako aloittaa myöhemmin?</summary>
@@ -281,13 +282,13 @@ footer img { width: 160px; margin-bottom: 12px; }
       </details>
       <details>
         <summary>Miten tiimi muodostetaan?</summary>
-        <p>Tiimi on ZwiftPower-tiimi. Kisan tiimipisteet ovat tiimin kolmen parhaan ajajan pisteet kaikista kategorioista, joten tiimiin riittää kolme ajajaa mistä tahansa ikäluokista. Seuran lisäksi myös kaveriporukka tai työpaikka voi perustaa oman tiimin. Tee tiimi hyvissä ajoin ja valitse se profiiliisi ennen ensimmäistä kisaasi, koska tiimi lukittuu ensimmäiseen kisaan, jossa edustat sitä.</p>
+        <p>Tiimi on ZwiftPower-tiimi. Kisan tiimipisteet ovat tiimin kolmen parhaan ajajan pisteet kaikista kategorioista, joten tiimiin riittää kolme ajajaa mistä tahansa ikäluokista. Seuran lisäksi myös kaveriporukka tai työpaikka voi perustaa oman tiimin. Tee tiimi hyvissä ajoin ja valitse se profiiliisi ennen ensimmäistä kisaasi, koska tiimi lukittuu ensimmäiseen kisaan, jonka ajat maaliin sen edustajana.</p>
       </details>
       <details>
         <summary>Olen alle 19-vuotias tai huoltaja. Näkyykö nimi tuloksissa?</summary>
         <p>Jos ZwiftPower-ikäluokkasi on Jnr (alle 19 v.), nimesi näkyy tuloksissa muodossa ”(ei julkaista)”. Sijasi ja pisteesi lasketaan silti normaalisti.</p>
-        <p>Jos haluat nimesi näkyviin muodossa E.Sukunimi, pyydä huoltajaasi lähettämään viesti osoitteeseen <a href="mailto:info@talvicup.fi">info@talvicup.fi</a>. Viestiin riittävät ajajan nimi ZwiftPowerissa ja profiilin linkki, huoltajan nimi sekä lause ”Annan luvan julkaista nimen muodossa E.Sukunimi TalviCup 2027:n tuloksissa.” Luvan voi perua milloin tahansa samaan osoitteeseen.</p>
-        <p>U23-ajaja, jonka ikä on piilotettu ZwiftPowerissa: nimesi näytetään, kun laitat iän näkyviin profiiliin tai kerrot samaan osoitteeseen olevasi täysi-ikäinen.</p>
+        <p>Jos haluat nimesi näkyviin muodossa E.Sukunimi, lähetä viesti osoitteeseen <a href="mailto:info@talvicup.fi">info@talvicup.fi</a>. Jos olet alle 18-vuotias, viestin lähettää huoltajasi. Viestiin riittävät ajajan nimi ZwiftPowerissa ja profiilin linkki, alle 18-vuotiaalla huoltajan nimi, sekä lause ”Annan luvan julkaista nimen muodossa E.Sukunimi TalviCup 2027:n tuloksissa.” Luvan voi perua milloin tahansa samaan osoitteeseen.</p>
+        <p>U23-ajaja, jonka ikä on piilotettu ZwiftPowerissa: nimesi näytetään, kun laitat iän näkyviin profiiliin tai kerrot samaan osoitteeseen olevasi täysi-ikäinen ja haluat nimesi näkyviin. Alle 18-vuotias tarvitsee huoltajan luvan kuten yllä.</p>
       </details>
       <details>
         <summary>Miten pisteet lasketaan pistekisassa?</summary>
@@ -313,6 +314,7 @@ footer img { width: 160px; margin-bottom: 12px; }
   <div class="wrap">
     <img src="assets/hiutale.webp" width="144" height="144" alt="" loading="lazy" style="width:72px">
     <p>E-pyöräilyn Suomen Cup – TalviCup 2027. Sivulla ei ole evästeitä eikä seurantaa.</p>
+    <p class="foot-links"><a href="seuroille/">Seuroille</a> · <a href="tulokset/">Sarjatilanne</a></p>
   </div>
 </footer>
 

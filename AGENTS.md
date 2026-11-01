@@ -9,6 +9,7 @@ Tämä repo sisältää vain sivun.
 |---|---|
 | `docs/index.html` | Pääsivu. Pages julkaisee vain `docs/`-kansion. |
 | `docs/tulokset/index.html` | Sarjatilanne ja tiimitaulu. Generoidaan datamoottorin komennolla `talvicup.py sivu --kohde <talvicup_fi>/docs`, älä muokkaa käsin. |
+| `docs/seuroille/index.html` | Seurapaketti seurojen viestijöille: valmis teksti fi/sv, kuvat ja linkit. Käsin tehty, tyylit kuten pääsivulla. |
 | `docs/assets/` | Kuvat ja fontit (Saira Condensed, SIL OFL) |
 | `docs/talvicup2027.ics` | Kisat kalenteritiedostona. Generoidaan: `py tyokalut/tee_kalenteri.py` (lukee `../rcf_talvicup/sarja/2027.json`), älä muokkaa käsin. |
 | `docs/CNAME` | Pagesin oma domain |
@@ -33,9 +34,13 @@ Tässä järjestyksessä: sivu ei saa näkyä hakukoneille ennen kuin osoite ja 
 2. Täytä LAHTORYHMAT, kun järjestäjä on vahvistanut kartan (kommentti `LAHTORYHMAT` tiedostossa `docs/index.html`).
    Lisää samat kirjaimet usein kysyttyjen kohtaan "Mikä lähtö on minun?".
 3. Jos järjestäjä on vahvistanut pisteasteikon, poista sen esitysmerkintä.
-4. Korvaa `LINKKI 1`–`LINKKI 6` kisalinkeillä ja poista teksti "Kisalinkki tulee tähän".
-5. Poista `noindex`-rivi ja sen kommentti tiedostosta `docs/index.html`. Tulossivun `noindex` tulee generaattorista, eikä sitä muuteta käsin.
-6. Jos kisapäivät tai reitit ovat muuttuneet, aja `py tyokalut/tee_kalenteri.py` ja commitoi `docs/talvicup2027.ics`.
+4. Lisää seurapaketin kuvat (katselmoitu julistus- ja tarinakuva fi/sv) kohtaan `KUVAT` tiedostossa
+   `docs/seuroille/index.html` ja poista teksti "Kuvat lisätään ennen julkistusta". Tarkista, että ruotsinkielinen teksti
+   on tarkistettu (kommentti `RUOTSI`), ja poista kommentti.
+5. Korvaa `LINKKI 1`–`LINKKI 6` kisalinkeillä ja poista teksti "Kisalinkki tulee tähän".
+6. Poista `noindex`-rivi ja sen kommentti tiedostoista `docs/index.html` ja `docs/seuroille/index.html`. Tulossivun
+   `noindex` tulee generaattorista, eikä sitä muuteta käsin.
+7. Jos kisapäivät tai reitit ovat muuttuneet, aja `py tyokalut/tee_kalenteri.py` ja commitoi `docs/talvicup2027.ics`.
 
 ## Testit
 

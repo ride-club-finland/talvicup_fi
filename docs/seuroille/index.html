@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- ENNEN-JULKISTUSTA: poista tämä rivi julkistuspäivänä -->
+<meta name="robots" content="noindex">
+<title>Seuroille – TalviCup 2027</title>
+<meta name="description" content="TalviCup 2027 seuroille: valmis teksti suomeksi ja ruotsiksi, kuvat ja linkit seuran omiin kanaviin.">
+<meta property="og:title" content="Seuroille – TalviCup 2027">
+<meta property="og:description" content="Valmis teksti ja kuvat seuran kanaviin. Kuusi torstaikisaa Zwiftissä 3.12.–28.1.">
+<meta property="og:image" content="https://talvicup.fi/assets/jako.jpg">
+<meta property="og:url" content="https://talvicup.fi/seuroille/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fi_FI">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#03102e">
+<link rel="icon" type="image/png" href="../assets/favicon.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<style>
+@font-face { font-family: "Saira Condensed"; font-weight: 400; font-display: swap; src: url("../assets/fontit/SairaCondensed-Regular.woff") format("woff"); }
+@font-face { font-family: "Saira Condensed"; font-weight: 600; font-display: swap; src: url("../assets/fontit/SairaCondensed-SemiBold.woff") format("woff"); }
+@font-face { font-family: "Saira Condensed"; font-weight: 700; font-display: swap; src: url("../assets/fontit/SairaCondensed-Bold.woff") format("woff"); }
+@font-face { font-family: "Saira Condensed"; font-weight: 900; font-display: swap; src: url("../assets/fontit/SairaCondensed-Black.woff") format("woff"); }
+:root {
+  --bg: #03102e; --band: #071d48; --line: #1c3f78;
+  --fg: #fbfdff; --soft: #b7d3ea; --ice: #84d5f6; --cup: #00c2ff; --amber: #ffb054;
+  --display: "Saira Condensed", "Arial Narrow", Impact, sans-serif;
+  --body: "Saira Condensed", "Segoe UI", system-ui, sans-serif;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 400 18px/1.5 var(--body); }
+img { display: block; max-width: 100%; height: auto; }
+a { color: var(--ice); text-underline-offset: 3px; }
+:focus-visible { outline: 2px solid var(--amber); outline-offset: 3px; }
+h1, h2, h3, p, ul, ol { margin: 0; padding: 0; }
+.wrap { max-width: 1040px; margin: 0 auto; padding-inline: max(16px, env(safe-area-inset-left, 0px)) max(16px, env(safe-area-inset-right, 0px)); }
+header { padding-block: 28px 32px; }
+.back { font: 600 1rem/1.2 var(--display); letter-spacing: .08em; text-transform: uppercase; text-decoration: none; }
+.kick { font: 600 1rem/1.2 var(--display); letter-spacing: .17em; text-transform: uppercase; color: var(--ice); margin-top: 20px; }
+h1 { font: 900 clamp(2.4rem, 8vw, 3.6rem)/1 var(--display); text-transform: uppercase; margin-top: 8px; }
+.intro { max-width: 36em; margin-top: 12px; color: var(--soft); font-size: 1.12rem; }
+section { padding-block: clamp(40px, 7vw, 64px); border-top: 1px solid var(--line); }
+section.band { background: var(--band); border-top: 0; }
+h2 { font: 900 clamp(1.9rem, 6vw, 2.8rem)/1 var(--display); text-transform: uppercase; margin-top: 8px; }
+.two { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 40px; margin-top: 24px; }
+h3 { font: 700 1.35rem/1.15 var(--display); text-transform: uppercase; color: var(--ice); margin-bottom: 8px; }
+.msg { padding: 16px 18px 18px; background: var(--bg); box-shadow: inset 0 0 0 1px var(--line); border-left: 4px solid var(--amber); }
+.msg p + p { margin-top: 10px; }
+.tips { list-style: none; counter-reset: tip; max-width: 40em; margin-top: 20px; }
+.tips li { counter-increment: tip; position: relative; padding: 8px 0 9px 40px; border-top: 1px solid var(--line); color: var(--soft); }
+.tips li::before { content: counter(tip); position: absolute; left: 0; top: 4px; font: 900 1.6rem/1.2 var(--display); color: var(--amber); }
+.tips b { color: var(--fg); font-weight: 600; }
+.placeholder { margin-top: 20px; padding: 28px 18px; max-width: 40em; text-align: center; border: 2px dashed var(--line); color: var(--soft); font: 700 1.2rem/1.3 var(--display); text-transform: uppercase; letter-spacing: .04em; }
+.note { margin-top: 14px; color: var(--soft); font-size: 1rem; max-width: 40em; }
+.cta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+.btn { display: inline-block; padding: 10px 16px 11px; font: 700 1.05rem/1.1 var(--display); text-transform: uppercase; letter-spacing: .03em; text-decoration: none; border-radius: 3px; color: var(--fg); box-shadow: inset 0 0 0 2px var(--ice); }
+.btn.main { background: var(--amber); color: #2a1503; box-shadow: none; }
+footer { padding-block: 28px 36px; border-top: 1px solid var(--line); color: var(--soft); font-size: .98rem; }
+@media (min-width: 800px) { body { font-size: 20px; } }
+@media (max-width: 800px) { .two { grid-template-columns: minmax(0, 1fr); } }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<a class="back" href="../">← talvicup.fi</a>
+<p class="kick">E-pyöräilyn Suomen Cup · 2027</p>
+<h1>Seuroille</h1>
+<p class="intro">Valmis teksti ja kuvat seuranne kanaviin: verkkosivulle, uutiskirjeeseen, someen tai jäsenviestiin. Saatte käyttää niitä sellaisenaan.</p>
+</div></header>
+
+<main>
+<section id="teksti" class="band">
+  <div class="wrap">
+    <p class="kick">Kopioi ja julkaise</p>
+    <h2>Valmis teksti</h2>
+    <div class="two">
+      <div>
+        <h3>Suomeksi</h3>
+        <div class="msg">
+          <p>E-pyöräilyn Suomen Cup – TalviCup 2027 ajetaan Zwiftissä kuutena torstaina 3.12.–28.1. klo 18.30. Sarja on avoin kaikille suomalaisille, kategoriat ovat U23, Avoin, 40+, 50+ ja 60+, ja viisi parasta kisaa lasketaan. Erillistä ilmoittautumista tai lisenssiä ei tarvita.</p>
+          <p>Sarjassa on tiimikilpailu, joten seuramme voi koota oman tiimin. Tiimin kolmen parhaan pisteet lasketaan joka kisassa kaikista kategorioista.</p>
+          <p>Tule mukaan viimeistään kisassa 2 (to 10.12.), niin kaikki viisi parasta lasketaan.</p>
+          <p>Kisalinkit ja säännöt: talvicup.fi</p>
+        </div>
+      </div>
+      <div lang="sv">
+        <h3>På svenska</h3>
+        <!-- RUOTSI: äidinkielinen tarkistus ennen julkistusta -->
+        <div class="msg">
+          <p>TalviCup 2027 körs på Zwift sex torsdagar 3.12.–28.1. kl. 18.30. Serien är öppen för alla finländare, kategorierna är U23, Öppen (Avoin), 40+, 50+ och 60+, och de fem bästa tävlingarna räknas. Ingen separat anmälan eller licens behövs.</p>
+          <p>I serien finns en lagtävling, så vår förening kan ställa upp med ett eget lag. Lagets tre bästa åkares poäng räknas i varje tävling, från alla kategorier.</p>
+          <p>Var med senast i tävling 2 (torsdag 10.12.), så räknas alla dina fem bästa tävlingar.</p>
+          <p>Tävlingslänkar och regler: talvicup.fi</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="kuvat">
+  <div class="wrap">
+    <p class="kick">Juliste ja tarina</p>
+    <h2>Kuvat</h2>
+    <!-- KUVAT: Mediatehtaan julkistuspaketti katselmuksen jälkeen (juliste 1080×1350 ja tarina 1080×1920, fi/sv) -->
+    <p class="placeholder">Kuvat lisätään ennen julkistusta</p>
+  </div>
+</section>
+
+<section id="jasenille" class="band">
+  <div class="wrap">
+    <p class="kick">Kolme asiaa ennen kisaa 1</p>
+    <h2>Kertokaa jäsenille</h2>
+    <ol class="tips">
+      <li><b>ZwiftPower-tili</b> on pakollinen, ja profiilissa pitää olla oikea maa, ikä ja sukupuoli.</li>
+      <li><b>Lähtö valitaan ikäkategorian mukaan</b>, ei tavallisen Zwift-kategorian (A–D) mukaan.</li>
+      <li><b>Seuran tiimi</b> on ZwiftPower-tiimi. Se valitaan profiiliin ennen ensimmäistä kisaa, koska tiimi lukittuu ensimmäiseen kisaan, jonka ajaja ajaa maaliin sen edustajana.</li>
+    </ol>
+  </div>
+</section>
+
+<section id="linkit">
+  <div class="wrap">
+    <h2>Linkit</h2>
+    <div class="cta">
+      <a class="btn main" href="../">Kisat ja säännöt</a>
+      <a class="btn" href="../talvicup2027.ics">Kisat kalenteriin (.ics)</a>
+      <a class="btn" href="../tulokset/">Sarjatilanne</a>
+    </div>
+    <p class="note">Kysymykset: <a href="mailto:info@talvicup.fi">info@talvicup.fi</a></p>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><p>E-pyöräilyn Suomen Cup – TalviCup 2027. Sivulla ei ole evästeitä eikä seurantaa.</p></div></footer>
+</body>
+</html>
