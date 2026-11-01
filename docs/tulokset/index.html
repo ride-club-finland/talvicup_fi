@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Sarjatilanne – TalviCup 2027</title>
+<meta name="description" content="E-pyöräilyn Suomen Cup – TalviCup 2027: sarjatilanne kategorioittain ja tiimien tulostaulu.">
+<meta name="theme-color" content="#03102e">
+<link rel="icon" type="image/png" href="../assets/favicon.png">
+<style>
+@font-face { font-family: "Saira Condensed"; font-weight: 400; font-display: swap; src: url("../assets/fontit/SairaCondensed-Regular.woff") format("woff"); }
+@font-face { font-family: "Saira Condensed"; font-weight: 500; font-display: swap; src: url("../assets/fontit/SairaCondensed-Medium.woff") format("woff"); }
+@font-face { font-family: "Saira Condensed"; font-weight: 600; font-display: swap; src: url("../assets/fontit/SairaCondensed-SemiBold.woff") format("woff"); }
+@font-face { font-family: "Saira Condensed"; font-weight: 700; font-display: swap; src: url("../assets/fontit/SairaCondensed-Bold.woff") format("woff"); }
+@font-face { font-family: "Saira Condensed"; font-weight: 900; font-display: swap; src: url("../assets/fontit/SairaCondensed-Black.woff") format("woff"); }
+:root {
+  --bg: #03102e; --band: #071d48; --line: #1c3f78;
+  --fg: #fbfdff; --soft: #b7d3ea; --ice: #84d5f6; --cup: #00c2ff; --amber: #ffb054;
+  --display: "Saira Condensed", "Arial Narrow", Impact, sans-serif;
+  --body: "Saira Condensed", "Segoe UI", system-ui, sans-serif;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 400 18px/1.5 var(--body); }
+a { color: var(--ice); text-underline-offset: 3px; }
+:focus-visible { outline: 2px solid var(--amber); outline-offset: 3px; }
+h1, h2, h3, p, ul { margin: 0; padding: 0; }
+.wrap { max-width: 1040px; margin: 0 auto; padding-inline: max(16px, env(safe-area-inset-left, 0px)) max(16px, env(safe-area-inset-right, 0px)); }
+header { padding-block: 28px 24px; }
+.back { font: 600 1rem/1.2 var(--display); letter-spacing: .08em; text-transform: uppercase; text-decoration: none; }
+.kick { font: 600 1rem/1.2 var(--display); letter-spacing: .17em; text-transform: uppercase; color: var(--ice); margin-top: 20px; }
+h1 { font: 900 clamp(2.4rem, 8vw, 3.6rem)/1 var(--display); text-transform: uppercase; margin-top: 8px; }
+.state { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; margin-top: 14px; color: var(--soft); }
+.badge { padding: 3px 12px 4px; font: 700 1rem/1.2 var(--display); text-transform: uppercase; letter-spacing: .06em; border-radius: 3px; }
+.badge.alustava { background: var(--amber); color: #2a1503; }
+.badge.lopullinen { background: var(--cup); color: #03102e; }
+nav ul { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin-top: 20px; }
+nav a { display: inline-block; padding: 5px 12px 6px; font: 700 1rem/1.1 var(--display); text-transform: uppercase; text-decoration: none; color: var(--fg); background: var(--band); box-shadow: inset 0 0 0 1px var(--line); }
+section { padding-block: 32px; border-top: 1px solid var(--line); }
+section.band { background: var(--band); }
+h2 { font: 900 clamp(1.8rem, 6vw, 2.6rem)/1 var(--display); text-transform: uppercase; }
+h2 small { display: block; font: 600 1rem/1.3 var(--display); letter-spacing: .14em; color: var(--ice); margin-bottom: 4px; }
+.table { margin-top: 16px; overflow-x: auto; -webkit-overflow-scrolling: touch; border: 1px solid var(--line); }
+table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+th, td { padding: 7px 10px; text-align: right; white-space: nowrap; border-top: 1px solid var(--line); }
+thead th { border-top: 0; font: 600 .9rem/1.2 var(--display); letter-spacing: .08em; text-transform: uppercase; color: var(--ice); background: var(--band); }
+th.name, td.name, td.team { text-align: left; }
+td.pos { font-weight: 700; width: 3.5em; }
+td.name { font-weight: 600; }
+td.team { color: var(--soft); max-width: 14em; overflow: hidden; text-overflow: ellipsis; }
+td.total { font: 900 1.15rem/1 var(--display); color: var(--amber); padding-right: 16px; }
+td.hidden { color: var(--soft); font-style: italic; font-weight: 400; }
+td del { color: var(--soft); opacity: .7; }
+td.none { color: var(--line); }
+.empty { margin-top: 12px; font: 700 clamp(1.3rem, 4vw, 1.8rem)/1.2 var(--display); text-transform: uppercase; }
+.note { margin-top: 14px; color: var(--soft); font-size: 1rem; max-width: 42em; }
+.note + .note { margin-top: 6px; }
+footer { padding-block: 28px 36px; border-top: 1px solid var(--line); color: var(--soft); font-size: .98rem; }
+@media (min-width: 800px) { body { font-size: 20px; } }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<a class="back" href="../">← talvicup.fi</a>
+<p class="kick">E-pyöräilyn Suomen Cup · 2027</p>
+<h1>Sarjatilanne</h1>
+
+
+</div></header>
+<main>
+<section><div class="wrap"><p class="empty">Sarjatilanne julkaistaan kisan 1 jälkeen.</p><p class="state">Kisa 1 ajetaan 3.12.2026.</p><p class="note">Kisakohtaiset tulokset ovat ZwiftPowerissa heti kisan jälkeen.</p></div></section>
+</main>
+<footer><div class="wrap"><p>E-pyöräilyn Suomen Cup – TalviCup 2027. Sivulla ei ole evästeitä eikä seurantaa.</p></div></footer>
+</body>
+</html>
