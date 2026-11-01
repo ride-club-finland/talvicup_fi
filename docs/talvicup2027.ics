@@ -1,0 +1,128 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//talvicup.fi//TalviCup 2027//FI
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:TalviCup 2027
+X-WR-TIMEZONE:Europe/Helsinki
+BEGIN:VEVENT
+UID:talvicup2027-kisa1@talvicup.fi
+DTSTAMP:20261031T000000Z
+DTSTART:20261203T163000Z
+DTEND:20261203T174500Z
+SUMMARY:TalviCup 2027 · Kisa 1: Jarvis Seaside Sprint × 2
+DESCRIPTION:Pistekisa · Watopia · 27\,8 km · nousua noin 190 m\nLähtö 
+ klo 18.30 Suomen aikaa. Valitse lähtö ikäkategoriasi mukaan.\nKisalinkk
+ i: https://talvicup.fi/#kisat\nSarjatilanne: https://talvicup.fi/tulokset/
+LOCATION:Zwift
+URL:https://talvicup.fi/#kisat
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:TalviCup 2027 · Kisa 1: Jarvis Seaside Sprint × 2 alkaa klo 1
+ 8.30
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:talvicup2027-kisa2@talvicup.fi
+DTSTAMP:20261031T000000Z
+DTSTART:20261210T163000Z
+DTEND:20261210T174500Z
+SUMMARY:TalviCup 2027 · Kisa 2: Double Espresso
+DESCRIPTION:Maaliintulojärjestys · Pariisi · 33\,7 km · nousua noin 220
+  m\nLähtö klo 18.30 Suomen aikaa. Valitse lähtö ikäkategoriasi mukaan
+ .\nKisalinkki: https://talvicup.fi/#kisat\nSarjatilanne: https://talvicup.
+ fi/tulokset/
+LOCATION:Zwift
+URL:https://talvicup.fi/#kisat
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:TalviCup 2027 · Kisa 2: Double Espresso alkaa klo 18.30
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:talvicup2027-kisa3@talvicup.fi
+DTSTAMP:20261031T000000Z
+DTSTART:20261217T163000Z
+DTEND:20261217T174500Z
+SUMMARY:TalviCup 2027 · Kisa 3: London Loop × 2
+DESCRIPTION:Pistekisa · Lontoo · 30\,3 km · nousua noin 460 m\nLähtö k
+ lo 18.30 Suomen aikaa. Valitse lähtö ikäkategoriasi mukaan.\nKisalinkki
+ : https://talvicup.fi/#kisat\nSarjatilanne: https://talvicup.fi/tulokset/
+LOCATION:Zwift
+URL:https://talvicup.fi/#kisat
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:TalviCup 2027 · Kisa 3: London Loop × 2 alkaa klo 18.30
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:talvicup2027-kisa4@talvicup.fi
+DTSTAMP:20261031T000000Z
+DTSTART:20270114T163000Z
+DTEND:20270114T174500Z
+SUMMARY:TalviCup 2027 · Kisa 4: Tempus Fugit
+DESCRIPTION:Henkilökohtainen aika-ajo · Watopia · 19\,7 km · nousua noi
+ n 30 m\nLähtö klo 18.30 Suomen aikaa. Valitse lähtö ikäkategoriasi mu
+ kaan.\nKisalinkki: https://talvicup.fi/#kisat\nSarjatilanne: https://talvi
+ cup.fi/tulokset/
+LOCATION:Zwift
+URL:https://talvicup.fi/#kisat
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:TalviCup 2027 · Kisa 4: Tempus Fugit alkaa klo 18.30
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:talvicup2027-kisa5@talvicup.fi
+DTSTAMP:20261031T000000Z
+DTSTART:20270121T163000Z
+DTEND:20270121T174500Z
+SUMMARY:TalviCup 2027 · Kisa 5: 2019 Worlds Harrogate Circuit × 3
+DESCRIPTION:Pistekisa · Yorkshire · 41\,4 km · nousua noin 735 m\nLäht
+ ö klo 18.30 Suomen aikaa. Valitse lähtö ikäkategoriasi mukaan.\nKisali
+ nkki: https://talvicup.fi/#kisat\nSarjatilanne: https://talvicup.fi/tuloks
+ et/
+LOCATION:Zwift
+URL:https://talvicup.fi/#kisat
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:TalviCup 2027 · Kisa 5: 2019 Worlds Harrogate Circuit × 3 alk
+ aa klo 18.30
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:talvicup2027-kisa6@talvicup.fi
+DTSTAMP:20261031T000000Z
+DTSTART:20270128T163000Z
+DTEND:20270128T174500Z
+SUMMARY:TalviCup 2027 · Kisa 6: Three Step Sisters
+DESCRIPTION:Maaliintulojärjestys · Watopia · 38\,1 km · nousua noin 590
+  m\nLähtö klo 18.30 Suomen aikaa. Valitse lähtö ikäkategoriasi mukaan
+ .\nKisalinkki: https://talvicup.fi/#kisat\nSarjatilanne: https://talvicup.
+ fi/tulokset/
+LOCATION:Zwift
+URL:https://talvicup.fi/#kisat
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:TalviCup 2027 · Kisa 6: Three Step Sisters alkaa klo 18.30
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

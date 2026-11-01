@@ -10,6 +10,7 @@ Tämä repo sisältää vain sivun.
 | `docs/index.html` | Pääsivu. Pages julkaisee vain `docs/`-kansion. |
 | `docs/tulokset/index.html` | Sarjatilanne ja tiimitaulu. Generoidaan datamoottorin komennolla `talvicup.py sivu --kohde <talvicup_fi>/docs`, älä muokkaa käsin. |
 | `docs/assets/` | Kuvat ja fontit (Saira Condensed, SIL OFL) |
+| `docs/talvicup2027.ics` | Kisat kalenteritiedostona. Generoidaan: `py tyokalut/tee_kalenteri.py` (lukee `../rcf_talvicup/sarja/2027.json`), älä muokkaa käsin. |
 | `docs/CNAME` | Pagesin oma domain |
 | `tyokalut/tee_kuvat.py` | Renderöi kuvat (ja fontit `fontit`-argumentilla) Mediatehtaan TalviCup-kirjastosta: `uv run --project rcf_mediatehdas python talvicup_fi/tyokalut/tee_kuvat.py` juuresta |
 
@@ -30,6 +31,8 @@ Tämä repo sisältää vain sivun.
 2. Korvaa `LINKKI`-kohdat kisalinkeillä.
 3. Tarkista, että info@talvicup.fi:n sähköpostiohjaus toimii (testiviesti).
 4. Jos järjestäjä on vahvistanut pisteasteikon, poista sen esitysmerkintä.
+5. Täytä LAHTORYHMAT, kun järjestäjä on vahvistanut kartan (kommentit `LAHTORYHMAT` tiedostossa `docs/index.html`).
+6. Jos kisapäivät tai reitit muuttuvat, aja `py tyokalut/tee_kalenteri.py` ja commitoi `docs/talvicup2027.ics`.
 
 ## Testit
 

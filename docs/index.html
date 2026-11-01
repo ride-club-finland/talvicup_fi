@@ -69,6 +69,11 @@ h2 { font: 900 clamp(2.3rem, 6vw, 3.4rem)/1 var(--display); text-transform: uppe
 .angle { color: var(--amber); font-weight: 600; font-size: 1.02rem; }
 .slot { font-size: 1rem; line-height: 1.25; color: var(--soft); text-align: right; }
 .pause { padding: 12px 0 12px 112px; border-top: 1px solid var(--line); font: 600 1rem/1.2 var(--display); letter-spacing: .14em; text-transform: uppercase; color: var(--ice); }
+.heads { margin-top: 20px; max-width: 40em; padding: 10px 16px 11px; border-left: 4px solid var(--amber); background: rgb(255 176 84 / .08); color: var(--fg); font-size: 1.02rem; line-height: 1.4; }
+.heads b { color: var(--amber); font-weight: 700; }
+.steps .heads { display: block; margin-top: 10px; }
+.steps .heads b { display: inline; margin: 0; font: inherit; font-weight: 700; text-transform: none; }
+.nw { font-style: normal; white-space: nowrap; }
 .note { margin-top: 18px; color: var(--soft); font-size: 1rem; max-width: 40em; }
 
 .steps { list-style: none; counter-reset: step; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 40px; margin-top: 28px; }
@@ -132,6 +137,7 @@ footer img { width: 160px; margin-bottom: 12px; }
     <p class="kick">3.12.2026–28.1.2027 · Zwift</p>
     <h2>Kuusi iltaa, kuusi erilaista kisaa</h2>
     <p class="intro">Kisat ajetaan torstaisin klo 18.30 Suomen aikaa. Viisi parasta lasketaan, joten yhden voit jättää väliin.</p>
+    <p class="heads"><b>Huom!</b> Lähdöt ovat ikäkategorioita, eivät tehoryhmiä. Valitse lähtö oman kategoriasi mukaan, älä tavallisen Zwift-kategoriasi <i class="nw">(A–D).</i><!-- LAHTORYHMAT: A=Avoin, B=U23, C=40+, D=50+, E=60+ (vahvistettava) --></p>
     <ol class="races">
       <li class="race">
         <img src="assets/hiutale_1.webp" width="240" height="240" alt="" loading="lazy">
@@ -172,6 +178,7 @@ footer img { width: 160px; margin-bottom: 12px; }
       </li>
     </ol>
     <p class="note">Kisoihin pääsee vain näiden linkkien kautta. Tapahtumat eivät näy Zwiftin julkisessa listauksessa.</p>
+    <div class="cta"><a class="btn alt" href="talvicup2027.ics" download>Lisää kaikki kisat kalenteriin (.ics)</a></div>
   </div>
 </section>
 
@@ -183,7 +190,7 @@ footer img { width: 160px; margin-bottom: 12px; }
       <li><b>Luo ZwiftPower-tili</b><span>Tili on pakollinen, koska tulokset luetaan ZwiftPowerista. Varaa tilin luontiin aikaa, äläkä jätä sitä kisapäivään.</span></li>
       <li><b>Laita varusteet kuntoon</b><span>Tarvitset Zwiftin, sykemittarin ja älytrainerin tai tehomittarin. ZPoweria ei hyväksytä.</span></li>
       <li><b>Tarkista profiilisi</b><span>Maa, ikä ja sukupuoli tarkistetaan ZwiftPower-profiilista, joten niiden pitää olla oikein.</span></li>
-      <li><b>Aja ensimmäinen kisasi</b><span>Avaa kisalinkki ja valitse kategoriaasi vastaava lähtö. Kategoriasi lukittuu ensimmäiseen kisaan, jonka ajat maaliin, ja pysyy samana koko sarjan. Tule mukaan viimeistään kisassa 2, niin kaikki viisi parasta lasketaan.</span></li>
+      <li><b>Aja ensimmäinen kisasi</b><span>Avaa kisalinkki ja valitse kategoriaasi vastaava lähtö. Kategoriasi lukittuu ensimmäiseen kisaan, jonka ajat maaliin, ja pysyy samana koko sarjan. Tule mukaan viimeistään kisassa 2, niin kaikki viisi parasta lasketaan.</span><span class="heads"><b>Huom!</b> Lähdöt ovat ikäkategorioita, eivät tehoryhmiä. Valitse lähtö oman kategoriasi mukaan, älä tavallisen Zwift-kategoriasi <i class="nw">(A–D).</i><!-- LAHTORYHMAT: A=Avoin, B=U23, C=40+, D=50+, E=60+ (vahvistettava) --></span></li>
     </ol>
   </div>
 </section>
