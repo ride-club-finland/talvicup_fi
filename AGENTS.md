@@ -19,8 +19,8 @@ Tämä repo sisältää vain sivun.
 
 1. **Repo muuttuu julkiseksi, kun sivu julkaistaan.** Tänne ei tule henkilötietoja, salaisuuksia eikä sisäisiä päätöksiä,
    myöskään commit-viesteihin.
-2. **Kisalinkit vain julkistuspäivänä ja vain tänne.** Linkit sisältävät salaisen osan ja jäävät repon historiaan.
-   `index.html` merkitsee paikat kommenteilla `LINKKI 1`–`LINKKI 6`.
+2. **Kisalinkit vain tänne.** Linkit sisältävät salaisen osan ja jäävät repon historiaan. Ne lisättiin sivulle ylläpitäjän
+   pyynnöstä jo ennen julkistusta, joten push ennen julkistusta julkaisee ne (sivu on `noindex`, kunnes se poistetaan).
 3. **Vain vahvistetut faktat, tai selvästi merkitty esitys.** Pisteasteikko saa näkyä ennen järjestäjän vahvistusta, kun sivu sanoo sen olevan esitys. Palkinnot vasta vahvistettuina.
 4. **Ei ulkoisia latauksia, lomakkeita, evästeitä eikä analytiikkaa.** Fontit ovat omalla palvelimella.
 5. **Logot vain luvalla.**
@@ -31,16 +31,13 @@ Tämä repo sisältää vain sivun.
 Tässä järjestyksessä: sivu ei saa näkyä hakukoneille ennen kuin osoite ja kisalinkit toimivat.
 
 1. Tarkista, että info@talvicup.fi:n sähköpostiohjaus toimii (testiviesti). Sivu ohjaa kysymykset, korjauspyynnöt ja luvat sinne.
-2. Täytä LAHTORYHMAT, kun järjestäjä on vahvistanut kartan (kommentti `LAHTORYHMAT` tiedostossa `docs/index.html`).
-   Lisää samat kirjaimet usein kysyttyjen kohtaan "Mikä lähtö on minun?".
-3. Jos järjestäjä on vahvistanut pisteasteikon, poista sen esitysmerkintä.
-4. Lisää seurapaketin kuvat (katselmoitu julistus- ja tarinakuva fi/sv) kohtaan `KUVAT` tiedostossa
+2. ~~Lähtöryhmät, pisteasteikon esitysmerkintä ja kisalinkit~~ tehty: järjestäjä vahvisti ne, ja linkit ovat sivulla.
+3. Lisää seurapaketin kuvat (katselmoitu julistus- ja tarinakuva fi/sv) kohtaan `KUVAT` tiedostossa
    `docs/seuroille/index.html` ja poista teksti "Kuvat lisätään ennen julkistusta". Tarkista, että ruotsinkielinen teksti
    on tarkistettu (kommentti `RUOTSI`), ja poista kommentti.
-5. Korvaa `LINKKI 1`–`LINKKI 6` kisalinkeillä ja poista teksti "Kisalinkki tulee tähän".
-6. Poista `noindex`-rivi ja sen kommentti tiedostoista `docs/index.html` ja `docs/seuroille/index.html`. Tulossivun
+4. Poista `noindex`-rivi ja sen kommentti tiedostoista `docs/index.html` ja `docs/seuroille/index.html`. Tulossivun
    `noindex` tulee generaattorista, eikä sitä muuteta käsin.
-7. Jos kisapäivät tai reitit ovat muuttuneet, aja `py tyokalut/tee_kalenteri.py` ja commitoi `docs/talvicup2027.ics`.
+5. Jos kisapäivät tai reitit ovat muuttuneet, aja `py tyokalut/tee_kalenteri.py` ja commitoi `docs/talvicup2027.ics`.
 
 ## Testit
 
