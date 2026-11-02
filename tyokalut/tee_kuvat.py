@@ -42,13 +42,8 @@ def images():
     for r in tk.races():
         tk.flake(240, active=(r["n"],)).save(SITE / f"hiutale_{r['n']}.webp", quality=88, method=6)
 
-    # Link preview (1200x630): the cropped flake (D) and the wordmark, readable as a thumbnail.
-    share = tk.rajattu((1200, 630), base=.9)
-    wm = tk.wordmark(560)
-    share = tk.over(share, wm, (64, 220))
-    d = tk.ImageDraw.Draw(share)
-    tk.kick(d, 70, 220 + wm.height + 60, "E-PYÖRÄILYN SUOMEN CUP  ·  3.12.–28.1.", 30, tk.ICE)
-    share.save(SITE / "jako.jpg", quality=84, optimize=True)
+    # Link preview (1200x630): the cropped flake (D), the series lockup and the dates, readable as a thumbnail.
+    tk.jakokuva(jakso="3.12.–28.1.  ·  TORSTAISIN KLO 18.30").convert("RGB").save(SITE / "jako.jpg", quality=84, optimize=True)
 
     tile = Image.new("RGBA", (180, 180), tk.POLAR + (255,))
     tile.alpha_composite(tk.flake(156), (12, 12))
