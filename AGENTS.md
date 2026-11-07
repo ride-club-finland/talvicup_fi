@@ -24,7 +24,7 @@ Tämä repo sisältää vain sivun.
 3. **Vain vahvistetut faktat, tai selvästi merkitty esitys.** Pisteasteikko saa näkyä ennen järjestäjän vahvistusta, kun sivu sanoo sen olevan esitys. Palkinnot vasta vahvistettuina.
 4. **Ei ulkoisia latauksia, lomakkeita, evästeitä eikä analytiikkaa.** Fontit ovat omalla palvelimella.
 5. **Logot vain luvalla.**
-6. **Ajajien nimet ja luvut vain tulossivulle ja vain generaattorin kautta.** Generaattori hoitaa nimimuodon, kieltolistan ja alaikäisten suojan.
+6. **Ajajien nimet ja luvut vain tulossivulle ja vain generaattorin kautta.** Generaattori hoitaa nimimuodon ja kieltolistan (alaikäisiä ei piiloteta erikseen, P6 muutettu 7.11.2026).
 
 ## Julkistuspäivän lista
 
