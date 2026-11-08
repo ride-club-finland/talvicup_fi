@@ -9,6 +9,7 @@ Tämä repo sisältää vain sivun.
 |---|---|
 | `docs/index.html` | Pääsivu. Pages julkaisee vain `docs/`-kansion. |
 | `docs/tulokset/index.html` | Sarjatilanne ja tiimitaulu. Generoidaan datamoottorin komennolla `talvicup.py sivu --kohde <talvicup_fi>/docs`, älä muokkaa käsin. |
+| `docs/tietosuoja/index.html` | Tietosuojailmoitus (rekisterinpitäjä Ride Club Finland ry). Käsin tehty, tyylit kuten pääsivulla. |
 | `docs/seuroille/index.html` | Seurapaketti seurojen viestijöille: valmis teksti fi/sv, kuvat ja linkit. Käsin tehty, tyylit kuten pääsivulla. |
 | `docs/assets/` | Kuvat ja fontit (Saira Condensed, SIL OFL) |
 | `docs/talvicup2027.ics` | Kisat kalenteritiedostona. Generoidaan: `py tyokalut/tee_kalenteri.py` (lukee `../rcf_talvicup/sarja/2027.json`), älä muokkaa käsin. |
@@ -33,9 +34,10 @@ Tässä järjestyksessä: sivu ei saa näkyä hakukoneille ennen kuin osoite ja 
 1. Tarkista, että info@talvicup.fi:n sähköpostiohjaus toimii (testiviesti). Sivu ohjaa kysymykset, korjauspyynnöt ja luvat sinne.
 2. ~~Lähtöryhmät, pisteasteikon esitysmerkintä ja kisalinkit~~ tehty: järjestäjä vahvisti ne, ja linkit ovat sivulla.
 3. Lisää seurapaketin kuvat (katselmoitu julistus- ja tarinakuva fi/sv) kohtaan `KUVAT` tiedostossa
-   `docs/seuroille/index.html` ja poista teksti "Kuvat lisätään ennen julkistusta". Tarkista, että ruotsinkielinen teksti
-   on tarkistettu (kommentti `RUOTSI`), ja poista kommentti.
-4. Poista `noindex`-rivi ja sen kommentti tiedostoista `docs/index.html` ja `docs/seuroille/index.html`. Tulossivun
+   `docs/seuroille/index.html` ja poista teksti "Kuvat lisätään ennen julkistusta". Ruotsi julkaistaan ilman äidinkielistä
+   tarkistusta (ylläpitäjä 8.11.2026), joten poista kommentti `RUOTSI`. Kuvat ennen liiton seurakutsua.
+4. Poista `noindex`-rivi ja sen kommentti tiedostoista `docs/index.html`, `docs/seuroille/index.html` ja
+   `docs/tietosuoja/index.html`. Tulossivun
    `noindex` tulee generaattorista, eikä sitä muuteta käsin.
 5. Jos kisapäivät tai reitit ovat muuttuneet, aja `py tyokalut/tee_kalenteri.py` ja commitoi `docs/talvicup2027.ics`.
 
