@@ -16,7 +16,7 @@
 @font-face { font-family: "Saira Condensed"; font-weight: 900; font-display: swap; src: url("../assets/fontit/SairaCondensed-Black.woff") format("woff"); }
 :root {
   --bg: #03102e; --band: #071d48; --line: #1c3f78;
-  --fg: #fbfdff; --soft: #b7d3ea; --ice: #84d5f6; --cup: #00c2ff; --amber: #ffb054;
+  --fg: #fbfdff; --soft: #b7d3ea; --dim: #7f9cc0; --ice: #84d5f6; --cup: #00c2ff; --amber: #ffb054;
   --display: "Saira Condensed", "Arial Narrow", Impact, sans-serif;
   --body: "Saira Condensed", "Segoe UI", system-ui, sans-serif;
   color-scheme: dark;
@@ -53,7 +53,9 @@ td.team { color: var(--soft); max-width: 14em; overflow: hidden; text-overflow: 
 td.total { font: 900 1.15rem/1 var(--display); color: var(--amber); padding-right: 16px; }
 td.hidden { color: var(--soft); font-style: italic; font-weight: 400; }
 td del { color: var(--soft); opacity: .7; }
-td.none { color: var(--line); }
+a.contact { margin-left: .35em; color: var(--amber); text-decoration: none; font-family: "Segoe UI Symbol", "DejaVu Sans", sans-serif; font-style: normal; }
+.sr { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+td.none { color: var(--dim); }  /* 6.6:1 on --bg, 5.8:1 on --band (WCAG AA for text) */
 .empty { margin-top: 12px; font: 700 clamp(1.3rem, 4vw, 1.8rem)/1.2 var(--display); text-transform: uppercase; }
 .note { margin-top: 14px; color: var(--soft); font-size: 1rem; max-width: 42em; }
 .note + .note { margin-top: 6px; }
@@ -70,7 +72,7 @@ footer { padding-block: 28px 36px; border-top: 1px solid var(--line); color: var
 
 </div></header>
 <main>
-<section><div class="wrap"><p class="empty">Sarjatilanne julkaistaan kisan 1 jälkeen.</p><p class="state">Kisa 1 ajetaan 3.12.2026.</p><p class="note">Kisakohtaiset tulokset ovat ZwiftPowerissa heti kisan jälkeen.</p></div></section>
+<section><div class="wrap"><p class="empty">Sarjatilanne julkaistaan kisan 1 jälkeen.</p><p class="state">Kisa 1 ajetaan 3.12.2026.</p><p class="note">Kisakohtaiset tulokset ovat ZwiftPowerissa heti kisan jälkeen.</p><p class="note">Puuttuuko tuloksesi? Tarkista, että ajoit maaliin, valitsit kategoriasi lähdön ja että ZwiftPower-profiilisi maa on Suomi. Jos et vieläkään löydy, lähetä heti kisan numero ja ZwiftPower-profiilisi linkki osoitteeseen info@talvicup.fi. Järjestäjä ratkaisee korjauksen sääntöjen mukaan.</p><p class="note" lang="sv">Saknas ditt resultat? Kontrollera att du körde i mål, i rätt start, och att landet i din ZwiftPower-profil är Finland. Skicka annars loppets nummer och länken till din profil till info@talvicup.fi.</p></div></section>
 </main>
 <footer><div class="wrap"><p>E-pyöräilyn Suomen Cup – TalviCup 2027. Sivulla ei ole evästeitä eikä seurantaa.</p></div></footer>
 </body>
