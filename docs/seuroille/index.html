@@ -3,8 +3,6 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- ENNEN-JULKISTUSTA: poista tämä rivi julkistuspäivänä -->
-<meta name="robots" content="noindex">
 <title>Seuroille – TalviCup 2027</title>
 <meta name="description" content="TalviCup 2027 seuroille: valmis teksti suomeksi ja ruotsiksi, kuvat ja linkit seuran omiin kanaviin.">
 <meta property="og:title" content="Seuroille – TalviCup 2027">
@@ -53,7 +51,11 @@ h3 { font: 700 1.35rem/1.15 var(--display); text-transform: uppercase; color: va
 .tips li { counter-increment: tip; position: relative; padding: 8px 0 9px 40px; border-top: 1px solid var(--line); color: var(--soft); }
 .tips li::before { content: counter(tip); position: absolute; left: 0; top: 4px; font: 900 1.6rem/1.2 var(--display); color: var(--amber); }
 .tips b { color: var(--fg); font-weight: 600; }
-.placeholder { margin-top: 20px; padding: 28px 18px; max-width: 40em; text-align: center; border: 2px dashed var(--line); color: var(--soft); font: 700 1.2rem/1.3 var(--display); text-transform: uppercase; letter-spacing: .04em; }
+.kuvat { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; margin-top: 20px; align-items: end; }
+.kuvat figure { margin: 0; }
+.kuvat img { box-shadow: 0 0 0 1px var(--line); }
+.kuvat figcaption { margin-top: 8px; font: 600 1rem/1.2 var(--display); text-transform: uppercase; letter-spacing: .05em; color: var(--soft); }
+@media (max-width: 800px) { .kuvat { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; } }
 .note { margin-top: 14px; color: var(--soft); font-size: 1rem; max-width: 40em; }
 .cta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
 .btn { display: inline-block; padding: 10px 16px 11px; font: 700 1.05rem/1.1 var(--display); text-transform: uppercase; letter-spacing: .03em; text-decoration: none; border-radius: 3px; color: var(--fg); box-shadow: inset 0 0 0 2px var(--ice); }
@@ -88,7 +90,6 @@ footer { padding-block: 28px 36px; border-top: 1px solid var(--line); color: var
       </div>
       <div lang="sv">
         <h3>På svenska</h3>
-        <!-- RUOTSI: äidinkielinen tarkistus ennen julkistusta -->
         <div class="msg">
           <p>TalviCup 2027 körs på Zwift sex torsdagar 3.12.–28.1. kl. 18.30. Serien är öppen för alla finländare, kategorierna är U23, Öppen (Avoin), 40+, 50+ och 60+, och de fem bästa tävlingarna räknas. Ingen separat anmälan eller licens behövs.</p>
           <p>I serien finns en lagtävling, så vår förening kan ställa upp med ett eget lag. Lagets tre bästa åkares poäng räknas i varje tävling, från alla kategorier.</p>
@@ -104,8 +105,25 @@ footer { padding-block: 28px 36px; border-top: 1px solid var(--line); color: var
   <div class="wrap">
     <p class="kick">Juliste ja tarina</p>
     <h2>Kuvat</h2>
-    <!-- KUVAT: Mediatehtaan julkistuspaketti katselmuksen jälkeen (juliste 1080×1350 ja tarina 1080×1920, fi/sv) -->
-    <p class="placeholder">Kuvat lisätään ennen julkistusta</p>
+    <p class="note">Avaa kuva ja tallenna se. Juliste (1080 × 1350) sopii syötteeseen ja verkkosivulle, tarina (1080 × 1920) Instagramin ja Facebookin tarinaan.</p>
+    <div class="kuvat">
+      <figure>
+        <a href="../assets/seuroille/talvicup_juliste_fi.jpg" download><img src="../assets/seuroille/talvicup_juliste_fi.jpg" width="1080" height="1350" loading="lazy" alt="TalviCup-juliste suomeksi: Kuusi iltaa, kuusi erilaista kisaa. 3.12.–28.1. torstaisin klo 18.30."></a>
+        <figcaption>Juliste · suomeksi</figcaption>
+      </figure>
+      <figure>
+        <a href="../assets/seuroille/talvicup_tarina_fi.jpg" download><img src="../assets/seuroille/talvicup_tarina_fi.jpg" width="1080" height="1920" loading="lazy" alt="TalviCup-tarinakuva suomeksi."></a>
+        <figcaption>Tarina · suomeksi</figcaption>
+      </figure>
+      <figure lang="sv">
+        <a href="../assets/seuroille/talvicup_juliste_sv.jpg" download><img src="../assets/seuroille/talvicup_juliste_sv.jpg" width="1080" height="1350" loading="lazy" alt="TalviCup-affisch på svenska: Sex kvällar, sex olika lopp."></a>
+        <figcaption>Affisch · på svenska</figcaption>
+      </figure>
+      <figure lang="sv">
+        <a href="../assets/seuroille/talvicup_tarina_sv.jpg" download><img src="../assets/seuroille/talvicup_tarina_sv.jpg" width="1080" height="1920" loading="lazy" alt="TalviCup-story på svenska."></a>
+        <figcaption>Story · på svenska</figcaption>
+      </figure>
+    </div>
   </div>
 </section>
 
