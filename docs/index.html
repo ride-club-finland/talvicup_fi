@@ -88,6 +88,9 @@ h3.sub { font: 700 1.45rem/1.15 var(--display); text-transform: uppercase; color
 .rules b { color: var(--fg); font-weight: 600; }
 .two p { color: var(--soft); }
 .two p + p, .two p + .rules, .two .rules + p { margin-top: 10px; }
+.prize { display: flex; gap: 16px; align-items: flex-start; padding: 14px 16px; border-left: 4px solid var(--amber); background: rgb(255 176 84 / .08); }
+.prize img { flex: none; width: 72px; height: 72px; }
+.prize b { color: var(--fg); font-weight: 600; }
 
 .faq { max-width: 44em; margin-top: 28px; border-bottom: 1px solid var(--line); }
 .faq details { border-top: 1px solid var(--line); }
@@ -249,6 +252,11 @@ footer img { width: 160px; margin-bottom: 12px; }
         </ul>
         <h3 class="sub" style="margin-top:24px">Tiimikilpailu</h3>
         <p>Tiimit kisaavat ZwiftPower-tiimien kautta. Tiimin kolmen parhaan ajajan tiimipisteet kaikista kategorioista lasketaan yhteen, ja niistä tehdään oma tulostaulu. Tiimipisteet ovat samat kuin henkilökohtaiset pisteet, paitsi jos sarjassa on kisassa alle kahdeksan maaliin ajanutta: silloin ne lasketaan sijalta 8 miinus voitettujen ajajien määrä, sekä maalissa että kireissä. Tiimin viisi parasta kisaa lasketaan. Tiimisi lukittuu ensimmäiseen kisaan, jonka ajat maaliin sen edustajana.</p>
+        <h3 class="sub" id="arvonta" style="margin-top:24px">Arvonta</h3>
+        <div class="prize">
+          <img src="assets/futurepeaks.webp" width="96" height="96" alt="FuturePeaks">
+          <p><b>Aja vähintään viisi kuudesta kisasta, niin olet mukana arvonnassa.</b> Kaikkien ehdon täyttäneiden kesken arvotaan noin 100 euron 4Endurance-tuotepaketti: urheilujuomaa, energia- ja kofeiinigeelejä, energiapaloja ja palautumispatukoita. Arvontapalkinnon tarjoaa <a href="https://futurepeaks.fi/">FuturePeaks.fi</a>.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -280,6 +288,10 @@ footer img { width: 160px; margin-bottom: 12px; }
       <details>
         <summary>En pääse kisaan 1. Kannattaako aloittaa myöhemmin?</summary>
         <p>Kyllä. Mukaan saa tulla missä kisassa tahansa, ja viisi parasta kisaa lasketaan. Kun aloitat viimeistään kisassa 2, kaikki viisi parasta kisaasi lasketaan. Myöhemmin aloittaessa saat pisteet ajamistasi kisoista, ja väliin jääneet ovat nollia.</p>
+      </details>
+      <details>
+        <summary>Onko sarjassa palkintoja?</summary>
+        <p>Kaikkien vähintään viisi kuudesta kisasta ajaneiden kesken arvotaan noin 100 euron 4Endurance-tuotepaketti, jonka tarjoaa <a href="https://futurepeaks.fi/">FuturePeaks.fi</a>. Lue lisää kohdasta <a href="#arvonta">Arvonta</a>.</p>
       </details>
       <details>
         <summary>Miten tiimi muodostetaan?</summary>
@@ -332,6 +344,7 @@ footer img { width: 160px; margin-bottom: 12px; }
       <li><b>Start efter ålder</b><span>A = U23, B = Öppen, C = 40+, D = 50+, E = 60+. Du får välja en yngre klass eller Öppen. Klassen låses i det första loppet du kör i mål.</span></li>
       <li><b>Loppet</b><span>Ingen separat anmälan: öppna tävlingslänken ovan och gå med i evenemanget i Zwift. Vi rekommenderar att du är vid starten cirka 15 minuter före kl. 18.30. Den som är sen får inte starta. Resultaten finns på <a href="tulokset/">talvicup.fi/tulokset</a> dagen efter.</span></li>
     </ol>
+    <p class="intro">Utlottning: bland alla som kör minst fem av sex lopp lottas ett produktpaket från 4Endurance värt cirka 100 euro. Priset skänks av <a href="https://futurepeaks.fi/">FuturePeaks.fi</a>.</p>
     <p class="intro">Frågor, rättelser och om ditt resultat saknas: <a href="mailto:info@talvicup.fi">info@talvicup.fi</a> (du kan skriva på svenska).</p>
   </div>
 </section>
